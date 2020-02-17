@@ -1,6 +1,8 @@
 setInterval(run, 4000);
 
 function run() {
+	deleteAllCookies();
+	
 	function sendData( url, data ) {
 	  console.log( 'Sending data' );
 
@@ -64,8 +66,6 @@ function run() {
 		"totalpoll[action]": "vote",
 		"totalpoll[pollId]": "20589"
 	});
-	
-	deleteAllCookies();
 
 }
 
